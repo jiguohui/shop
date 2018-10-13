@@ -50,9 +50,11 @@ $config = [
         'db' => $db,
         'redis' => $redis,
         'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => require(__DIR__ . '/rules.php')
+            'enablePrettyUrl' => true, // 美化
+            'showScriptName' => false, // 隐藏index.php
+            //'enableStrictParsing' => false, // 严格解析
+            //'rules' => require(__DIR__ . '/rules.php'),
+            //'suffix' => '.html',
 
         ],
     ],
